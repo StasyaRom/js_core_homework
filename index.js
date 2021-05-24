@@ -1,5 +1,5 @@
 // task2
-let surname = "Romaniuk";
+const surname = "Romaniuk";
 console.log(surname);
 
 // task3
@@ -12,21 +12,21 @@ console.log(month);
 console.log(number);
 
 // task4
-let name = "Anastassiya";
+const name = "Anastassiya";
 console.log(typeof name);
-let age = 25;
+const age = 25;
 console.log(typeof age);
-let employee = true;
+const employee = true;
 console.log(typeof employee);
-let undefStatus;
+const undefStatus;
 console.log(typeof undefStatus);
-let diploma = {degree:"bachelor", profile:"architecture"};
+const diploma = {degree:"bachelor", profile:"architecture"};
 console.log(typeof diploma);
 
 // task5
-let ageVerification = confirm("Are you an adult?");
+const ageVerification = confirm("Are you an adult?");
 alert(ageVerification);
-let isAdult = ageVerification;
+const isAdult = ageVerification;
 console.log(isAdult);
 
 // task6
