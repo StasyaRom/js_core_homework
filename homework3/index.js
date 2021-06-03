@@ -19,6 +19,29 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 
+// task3
+let min = 1;
+let max = 500;
+
+let arr = [];
+
+function randArray(k) {
+  for (let i = 0; i < k; i++) {
+    arr[i] = (function (x, y) {
+      return Math.floor(Math.random() * x) + y;
+    })(max, min);
+  }
+}
+
+const size = +prompt("Enter the array size");
+
+randArray();
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+
+
 // task4 (не бачу помилки, але чомусь не працює)
 let a = prompt('Enter the variable a');
 let b = prompt('Enter the variable b');
