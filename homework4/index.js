@@ -50,3 +50,26 @@ try {
 }
 
 //task3
+class MonthExeption {
+        constructor(message) {
+            this.name = "MonthExeption";
+        }
+    }
+    function showMonthName() {
+      let month = [January, February, March, April, May, June, July, August, September, October, November, December];  
+      let number = [month - 1];
+      if (number === [month]) {
+          return number[month];
+      } else {
+          throw new Exeption ("Incorrect month number");
+      }
+    }
+
+    try {
+        let currentMonth = 6;
+        let monthName = showMonthName(currentMonth);
+        console.log(monthName);
+    } catch (exeption) {
+        console.log(exeption.name);
+        console.log(exeption.message);
+    }
